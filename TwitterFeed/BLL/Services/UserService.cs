@@ -19,7 +19,7 @@ namespace TwitterFeed.BLL.Services
 
         public User GetUserByUserName(string userName)
         {
-            throw new NotImplementedException();
+            return _userRepository.GetUser(userName);
         }
 
         public void RegisterNewUser(string userName)

@@ -38,5 +38,12 @@ namespace TwitterFeed.Repository
         {
             throw new NotImplementedException();
         }
+
+        public User GetUser(string userName)
+        {
+           var expectedUser = _users.Find(x => x.UserName == userName);
+
+          return expectedUser;
+        }
     }
 }

@@ -12,5 +12,6 @@ namespace TwitterFeed.Repository
         void Add(User entity);
 
         void Save(User entity);
+        User GetUser(string userName);
     }
 }
